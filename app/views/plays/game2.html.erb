@@ -1,0 +1,17 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <h1>Select your word!</h1>
+      <h4><%= @grid %></h4>
+        <form action="/score" method="post" class="form-inline">
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <div class="form-group">
+            <input class="form-control" type="text" name="word" id="word" placeholder="What's the word?">
+            <input type="hidden" name="grid" id="grid" value="<%= @grid %>">
+            <input type="hidden" name="time2" id="time2" value="<%= Time.now %>">
+          </div>
+          <button type="submit" class="btn btn-primary" value="Go on!">Send!</button>
+    </div>
+  </div>
+</div>
+

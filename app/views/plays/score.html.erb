@@ -1,0 +1,13 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1 class="text-center">And these are your results, my friend...</h1>
+      <h3 class="text-center"><%= @result[:message] %></h3>
+      <p><strong>Your word: </strong><%= @word %></p>
+      <p><strong>Your score: </strong><%= @result[:score].round %></p>
+      <p><strong>Your time: </strong><%= @result[:time].round %> seconds</p>
+    </div>
+  </div>
+</div>
