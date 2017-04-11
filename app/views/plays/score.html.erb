@@ -8,6 +8,9 @@
       <p><strong>Your word: </strong><%= @word %></p>
       <p><strong>Your score: </strong><%= @result[:score].round %></p>
       <p><strong>Your time: </strong><%= @result[:time].round %> seconds</p>
+      <br>
+      <%= link_to "Jogue novamente", game_path %>
     </div>
+    <%= link_to "Jogue novamente", game_path %>
   </div>
 </div>
